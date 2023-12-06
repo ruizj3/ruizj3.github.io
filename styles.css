@@ -112,8 +112,8 @@ html {
 }
 
 .resume-link {
-    color: white;
-    font-weight: bold;
+    color: white !important;
+    font-weight: bold !important;
     text-decoration: none;
 }
 
