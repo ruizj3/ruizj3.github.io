@@ -110,4 +110,13 @@ html {
 .my-link:hover {
     text-decoration: underline;
 }
-/* ...media queries... */
+
+.resume-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
