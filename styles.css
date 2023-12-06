@@ -103,4 +103,11 @@ html {
     text-decoration: underline;
 }
 
+.my-link {
+    color: blue;
+    text-decoration: none;
+}
+.my-link:hover {
+    text-decoration: underline;
+}
 /* ...media queries... */
