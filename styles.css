@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5; /* Light gray background for a clean look */
-    color: #333; /* Dark gray text for readability */
+    background-color: #f8f8f8; /* Light gray background, clean and modern */
+    color: #333; /* Dark gray text for contrast and readability */
     line-height: 1.6;
 }
 
 header {
-    background: #161d2f; /* Deep blue*/
+    background: #1a1a2e; /* Deep, dark blue for a sleek look */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -40,7 +40,7 @@ header nav ul li a {
 }
 
 #hero {
-    background: #1c223b; /* Slightly lighter shade of blue for contrast */
+    background: #16213e; /* Slightly different shade of dark blue for variety */
     color: #ffffff;
     padding: 2rem 0;
     text-align: center;
@@ -54,7 +54,7 @@ header nav ul li a {
 .resume-link, .my-link {
     display: inline-block;
     margin-top: 1rem;
-    background: #21a3d0; /* Bright accent color for contrast */
+    background: #0f3460; /* Subdued blue for a mature look */
     color: white;
     padding: 0.5rem 2rem;
     text-decoration: none;
@@ -63,11 +63,11 @@ header nav ul li a {
 }
 
 .resume-link:hover, .my-link:hover {
-    background: #1c8db2; /* Darker shade of the accent color for hover effect */
+    background: #533483; /* A gentle purple for a subtle hover effect */
 }
 
 footer {
-    background: #161d2f;
+    background: #1a1a2e;
     color: white;
     text-align: center;
     padding: 1rem 0;
