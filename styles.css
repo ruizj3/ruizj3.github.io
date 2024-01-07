@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Soft gray background */
+    background-color: #f0f2f5; /* Light gray background for a clean look */
     color: #333; /* Dark gray text for readability */
     line-height: 1.6;
 }
 
 header {
-    background: #6c5ce7; /* Soft purple */
+    background: #161d2f; /* Deep blue*/
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -36,12 +36,12 @@ header nav ul li a {
 }
 
 .fa {
-    margin-right: 5px; /* space between icon and text */
+    margin-right: 5px; /* Space between icon and text */
 }
 
 #hero {
-    background: #81ecec; /* Soft turquoise */
-    color: #2d3436; /* Darker text for contrast */
+    background: #1c223b; /* Slightly lighter shade of blue for contrast */
+    color: #ffffff;
     padding: 2rem 0;
     text-align: center;
 }
@@ -54,8 +54,8 @@ header nav ul li a {
 .resume-link, .my-link {
     display: inline-block;
     margin-top: 1rem;
-    background: #fdcb6e; /* Soft yellow */
-    color: #2d3436;
+    background: #21a3d0; /* Bright accent color for contrast */
+    color: white;
     padding: 0.5rem 2rem;
     text-decoration: none;
     border-radius: 5px;
@@ -63,11 +63,11 @@ header nav ul li a {
 }
 
 .resume-link:hover, .my-link:hover {
-    background: #e17055; /* Soft orange */
+    background: #1c8db2; /* Darker shade of the accent color for hover effect */
 }
 
 footer {
-    background: #6c5ce7;
+    background: #161d2f;
     color: white;
     text-align: center;
     padding: 1rem 0;
