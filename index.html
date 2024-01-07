@@ -5,62 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph David Ruiz - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Font Awesome -->
     <style>
-        /* Insert the CSS code here if not using an external file */
+        /* You can insert additional CSS code here if not using an external file */
     </style>
 </head>
 <body>
 
-<div class="header">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
     <h1>Joseph David Ruiz</h1>
     <p>Engineer | Finance</p>
-    <a href="Joseph Ruiz SE Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">View My Resume</a>
-</div>
+    <a href="Joseph Ruiz SE Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link"><i class="fas fa-file-alt"></i> View My Resume</a>
+</section>
 
-<div class="section about animate-on-scroll">
+<section id="about" class="animate-on-scroll">
     <h2>About Me</h2>
-    <p>Professional experience in various data analysis projects regarding financial and operational issues. 
-        Created powerful BI and Tableau dashboards for quicker macro-decision making and iterated over many 
-        machine learning models for anomaly detection. Will continue to use software engineering tools and 
-        data analysis experience to create data-driven products that also generate proper and useful data 
-        in the backend.</p>
-    <p>
-        My next stage is completing my PhD. (coming soon)  
-    </p>
-</div>
+    <!-- About Me content -->
+</section>
 
-<div class="section portfolio animate-on-scroll">
+<section id="portfolio" class="animate-on-scroll">
     <h2>Portfolio</h2>
-    <div class="projects">
-        <!-- Replace with your project details -->
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="link-to-project-1">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="link-to-project-2">View Project</a>
-        </div>
-        <!-- Add more projects as needed -->
-    </div>
-</div>
+    <!-- Portfolio content -->
+</section>
 
-<div class="section contact animate-on-scroll">
+<section id="contact" class="animate-on-scroll">
     <h2>Contact Information</h2>
-    <p>ruizjoseph0@gmail.com</p>
-    <a href="https://www.linkedin.com/in/joseph-ruiz-09994435/" class="my-link">LinkedIn Profile</a>
-</div>
+    <p><i class="fas fa-envelope"></i> ruizjoseph0@gmail.com</p>
+    <a href="https://www.linkedin.com/in/joseph-ruiz-09994435/" class="my-link"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+</section>
 
-<div class="footer">
+<footer>
     <p>&copy; 2023 Joseph David Ruiz</p>
-</div>
+</footer>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-<script>
-    // Insert the JavaScript code here if not using an external file
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
