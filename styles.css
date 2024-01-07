@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Poppins font applied globally */;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #f8f8f8; /* Light gray background, clean and modern */
     color: #333; /* Dark gray text for contrast and readability */
     line-height: 1.6;
