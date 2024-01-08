@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #d8e705; /* Deep, dark blue for a sleek look */
+    background: #1a1a2e; /* Deep, dark blue for a sleek look */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -36,14 +36,49 @@ header nav ul li a {
 }
 
 .fa {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px;
 }
 
 #hero {
-    background: #16213e; /* Slightly different shade of dark blue for variety */
+    background: #293a69;
     color: #ffffff;
     padding: 2rem 0;
     text-align: center;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects div {
+    height: 200px;
+    width: 200px;
+    justify-self: center;
+  }
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-self: auto;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    word-wrap: break-word;
 }
 
 .section {
@@ -54,7 +89,7 @@ header nav ul li a {
 .resume-link, .my-link {
     display: inline-block;
     margin-top: 1rem;
-    background: #0f3460; /* Subdued blue for a mature look */
+    background: #1a1a2e;
     color: white;
     padding: 0.5rem 2rem;
     text-decoration: none;
@@ -63,7 +98,7 @@ header nav ul li a {
 }
 
 .resume-link:hover, .my-link:hover {
-    background: #533483; /* A gentle purple for a subtle hover effect */
+    background: #533483;
 }
 
 footer {
@@ -74,4 +109,30 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects div:first-child {
+        justify-self: start;
+    }
+
+    .projects div:last-child {
+        justify-self: end;
+    }
+
+    .resume-link, .my-link {
+        padding: 0.5rem 1rem;
+    }
 }
