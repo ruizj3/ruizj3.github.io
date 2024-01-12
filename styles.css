@@ -3,13 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Poppins font applied globally */;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #f8f8f8; /* Light gray background, clean and modern */
-    color: #333; /* Dark gray text for contrast and readability */
+    background-color: #f8f8f8;
+    color: #333;
     line-height: 1.6;
+    justify-self: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
@@ -49,23 +53,9 @@ header nav ul li a {
 /* Portfolio Section */
 .portfolio {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 2fr;
     padding: 2rem;
     gap: 20px; /* Space between projects */
-}
-
-.projects {
-    display: flex;
-    gap: 20px;
-}
-.projects {
-    grid-template-columns: 1fr 1fr;
-}
-.projects {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout by default */
-    gap: 20px;
-    padding: 2rem;
 }
 
 .project {
@@ -74,10 +64,6 @@ header nav ul li a {
     margin: 5px;
     box-sizing: border-box;
     justify-self: center;
-}
-
-.project h3 {
-    margin-top: 0;
 }
 
 .project a {
@@ -131,4 +117,19 @@ footer {
     .projects {
         grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
     }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    }
+    
+    section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd; /* For boxed look /
+    border-radius: 10px; / Optional: rounded corners */
+    }   
 }
