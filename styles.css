@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#about p {
+    border: 1px solid #000; /* Example: 1px solid black border */
+    padding: 10px; /* Adds some space between the text and the border */
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -64,6 +70,13 @@ header nav ul li a {
     margin: 5px;
     box-sizing: border-box;
     justify-self: center;
+}
+
+.project img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .project a {
