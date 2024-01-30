@@ -23,9 +23,9 @@ function Portfolio() {
         </div>
         <div class="project">
             <img src="NodeGraph.png" alt="Node Graph of Customers to Stores connections."></img>
-            <h3>Project Title 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="link-to-project-2" class="my-link">View Project</a>
+            <h3>Pill and Bill</h3>
+            <p>A small app made during the Flatiron bootcamp.</p>
+            <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
         <div class="project">
             <img src="NodeGraph.png" alt="Node Graph of Customers to Stores connections."></img>
