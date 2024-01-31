@@ -25,6 +25,7 @@ function Portfolio() {
             <img src="pill_and_bill.jpeg" alt="Pill."></img>
             <h3>Pill and Bill</h3>
             <p>A small app made during the Flatiron bootcamp.</p>
+            <p>This app depends on a small db to spin up for usage which takes a few seconds.</p>
             <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
         {//commenting out until new project inserted
