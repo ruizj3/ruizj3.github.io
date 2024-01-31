@@ -99,10 +99,11 @@ header nav ul li a {
 }
 
 .project img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: auto;      /* Width can adjust to maintain aspect ratio */
+  height: 400px;    /* Fixed height for all images */
+  display: block;   /* Display block to remove any extra space around the image */
+  margin: 0 auto;   /* Center the image within its container */
+  object-fit: cover; /* This will ensure that the image covers the area, might crop the image */
 }
 
 .my-link {

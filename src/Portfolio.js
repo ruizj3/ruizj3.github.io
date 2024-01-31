@@ -22,17 +22,19 @@ function Portfolio() {
             <a href="https://mybinder.org/v2/gh/ruizj3/ruizj3.github.io/main?labpath=Equal+Item+Substitution+Recovery" class="my-link">Run Code in Virtual Environment</a>
         </div>
         <div class="project">
-            <img src="NodeGraph.png" alt="Node Graph of Customers to Stores connections."></img>
+            <img src="pill_and_bill.jpeg" alt="Pill."></img>
             <h3>Pill and Bill</h3>
             <p>A small app made during the Flatiron bootcamp.</p>
             <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
-        <div class="project">
-            <img src="NodeGraph.png" alt="Node Graph of Customers to Stores connections."></img>
-            <h3>Project Title 3</h3>
-            <p>Description of Project 3.</p>
-            <a href="link-to-project-2" class="my-link">View Project</a>
-        </div>
+        {//commenting out until new project inserted
+        // <div class="project">
+        //    <img src="NodeGraph.png" alt="Project 3."></img>
+        //    <h3>Project Title 3</h3>
+        //    <p>Description of Project 3.</p>
+        //    <a href="link-to-project-3" class="my-link">View Project</a>
+        // </div>
+        }
 </section>
     );
 }
