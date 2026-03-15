@@ -98,6 +98,29 @@ header nav ul li a {
   flex: 0 0 45%;
 }
 
+.wip-project {
+  position: relative;
+  opacity: 0.9;
+}
+
+.wip-badge {
+  background: #e67e22;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.wip-project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
 .project img {
   width: auto;      /* Width can adjust to maintain aspect ratio */
   height: 400px;    /* Fixed height for all images */

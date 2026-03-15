@@ -28,14 +28,27 @@ function Portfolio() {
             <p>This app depends on a small db to spin up for usage which takes a few seconds.</p>
             <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
-        {//commenting out until new project inserted
-        // <div class="project">
-        //    <img src="NodeGraph.png" alt="Project 3."></img>
-        //    <h3>Project Title 3</h3>
-        //    <p>Description of Project 3.</p>
-        //    <a href="link-to-project-3" class="my-link">View Project</a>
-        // </div>
-        }
+        <div class="project wip-project">
+            <div class="wip-badge">Work in Progress</div>
+            <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Service"/>
+            <h3>Fake Grocery Delivery Service</h3>
+            <p>A simulated grocery delivery service application.</p>
+            <a href="https://github.com/ruizj3/fake_grocery_delivery_service" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
+        <div class="project wip-project">
+            <div class="wip-badge">Work in Progress</div>
+            <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Time Prediction"/>
+            <h3>Fake Grocery Delivery Time Prediction</h3>
+            <p>Predicting delivery times for a simulated grocery delivery service.</p>
+            <a href="https://github.com/ruizj3/fake_grocery_delivery_time_prediction" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
+        <div class="project wip-project">
+            <div class="wip-badge">Work in Progress</div>
+            <img src="/wip-placeholder.svg" alt="Work in Progress - Receipt OCR"/>
+            <h3>Receipt OCR</h3>
+            <p>Optical character recognition for receipts.</p>
+            <a href="https://github.com/ruizj3/receipt-ocr" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
 </section>
     );
 }
