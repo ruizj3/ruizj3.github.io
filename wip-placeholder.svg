@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#293a69" rx="12"/>
+  <rect x="20" y="20" width="360" height="260" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="10,6" rx="8"/>
+  <text x="200" y="130" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">🚧</text>
+  <text x="200" y="170" text-anchor="middle" font-family="Poppins, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">Work in Progress</text>
+  <text x="200" y="210" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" fill="#aab4d0">Check back soon!</text>
+</svg>
