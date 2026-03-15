@@ -8,7 +8,7 @@ function Portfolio() {
             <img src="/NodeGraph.png" alt="Node Graph of Customers to Stores connections."/>
             <h3>Equal Item Substitution Recovery</h3>
             <p>Final project for master's degree.</p>
-            <a href="https://docs.google.com/document/d/1tywfdtC6FkuHbwu3HbgzFoZcHxyszrIN/edit?usp=sharing&ouid=116644839752037295789&rtpof=true&sd=true"
+            <a href="https://docs.google.com/document/d/14qXZM495gYiFsKS8813e9PUSGstSjFoq/edit?usp=sharing&ouid=101560770551419413319&rtpof=true&sd=true"
                 class="my-link">View Report</a>
             <a href="https://github.com/ruizj3/ruizj3.github.io/blob/main/Equal%20Item%20Substitution%20Recovery/1.)%20Parent%20Company%20Transportation%20Problem%20Submitted.ipynb"
                 class="my-link">View Raw Network Optimization Code</a>
