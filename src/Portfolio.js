@@ -33,6 +33,7 @@ function Portfolio() {
             <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Service"/>
             <h3>Fake Grocery Delivery Service</h3>
             <p>A simulated grocery delivery service application.</p>
+            <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Fake Data</a>
             <a href="https://github.com/ruizj3/fake_grocery_delivery_service" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
         <div class="project wip-project">
