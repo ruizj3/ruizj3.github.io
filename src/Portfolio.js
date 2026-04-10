@@ -29,7 +29,7 @@ function Portfolio() {
             <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
         <div class="project">
-            <img src="mila-okta-safitri-6B1zbV5zidk-unsplash.jpg"></img>
+            <img src="mila-okta-safitri-6B1zbV5zidk-unsplash.jpg" alt="Fake Delivery Service."></img>
             <h3>Fake Grocery Delivery Service</h3>
             <p>A simulated grocery delivery service application.</p>
             <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Fake Data</a>
