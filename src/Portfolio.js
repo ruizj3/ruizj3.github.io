@@ -28,9 +28,8 @@ function Portfolio() {
             <p>This app depends on a small db to spin up for usage which takes a few seconds.</p>
             <a href="https://ruizj3.github.io/pill_and_bill/" class="my-link">View React App</a>
         </div>
-        <div class="project wip-project">
-            <div class="wip-badge">Work in Progress</div>
-            <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Service"/>
+        <div class="project">
+            <img src="mila-okta-safitri-6B1zbV5zidk-unsplash.jpg"></img>
             <h3>Fake Grocery Delivery Service</h3>
             <p>A simulated grocery delivery service application.</p>
             <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Fake Data</a>
