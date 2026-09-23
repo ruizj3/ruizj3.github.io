@@ -35,6 +35,18 @@ function Portfolio() {
             <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Fake Data</a>
             <a href="https://github.com/ruizj3/fake_grocery_delivery_service" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
+        <div class="project">
+            <img class="diagram-image" src="/local-gcp-mirror-pipeline.svg" alt="Local GCP Architecture Mirror pipeline flow diagram."/>
+            <h3>Local GCP Architecture Mirror</h3>
+            <p>A local streaming data platform that mirrors core Google Cloud data engineering architecture with Kafka, Spark, Airflow, and PostgreSQL.</p>
+            <a href="https://github.com/ruizj3/local-gcp-mirror-pipeline" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
+        <div class="project">
+            <img class="diagram-image" src="/fraud-detection-transformer.svg" alt="Fraud Detection Transformer service flow diagram."/>
+            <h3>Fraud Detection Transformer</h3>
+            <p>A Dockerized fraud detection pipeline with drift-gated transformer training, live transaction scoring, and persisted predictions.</p>
+            <a href="https://github.com/ruizj3/fraud_detection_transformer" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
         <div class="project wip-project">
             <div class="wip-badge">Work in Progress</div>
             <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Time Prediction"/>
