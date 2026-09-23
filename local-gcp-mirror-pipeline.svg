@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" role="img" aria-labelledby="title desc">
+  <title id="title">Local GCP architecture mirror pipeline flow</title>
+  <desc id="desc">Transaction simulator sends JSON through Kafka and PySpark Structured Streaming into PostgreSQL raw events and metrics. Airflow manages warehouse jobs, while Adminer inspects the database and training data is exported.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#4c6072"/></marker>
+    <style>
+      .node { fill: #f4f7f9; stroke: #2f4858; stroke-width: 3; }
+      .store { fill: #e8f2f0; stroke: #2f6f68; stroke-width: 3; }
+      .label { fill: #18313f; font: 600 22px Georgia, serif; text-anchor: middle; }
+      .small { fill: #49606d; font: 17px Georgia, serif; text-anchor: middle; }
+      .edge { stroke: #4c6072; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .edge-label { fill: #49606d; font: 16px Georgia, serif; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1280" height="680" fill="#fbfaf7"/>
+  <text x="640" y="48" class="label" font-size="28">Pipeline Flow</text>
+  <rect x="40" y="240" width="170" height="90" rx="12" class="node"/><text x="125" y="275" class="label">Transaction</text><text x="125" y="303" class="small">simulator</text><text x="125" y="326" class="small">mock_producer.py</text>
+  <rect x="270" y="240" width="150" height="90" rx="12" class="node"/><text x="345" y="275" class="label">Apache Kafka</text><text x="345" y="305" class="small">transactions topic</text>
+  <rect x="480" y="240" width="190" height="90" rx="12" class="node"/><text x="575" y="273" class="label">PySpark</text><text x="575" y="301" class="small">Structured Streaming</text><text x="575" y="325" class="small">streaming_ingest.py</text>
+  <rect x="760" y="140" width="190" height="90" rx="12" class="store"/><text x="855" y="175" class="label">PostgreSQL</text><text x="855" y="205" class="small">fraud_events</text>
+  <rect x="760" y="340" width="190" height="90" rx="12" class="store"/><text x="855" y="375" class="label">PostgreSQL</text><text x="855" y="405" class="small">aggregated_fraud_metrics</text>
+  <rect x="1030" y="240" width="180" height="90" rx="12" class="node"/><text x="1120" y="275" class="label">Adminer</text><text x="1120" y="305" class="small">SQL inspection UI</text>
+  <rect x="1010" y="500" width="220" height="90" rx="12" class="node"/><text x="1120" y="535" class="label">Training data</text><text x="1120" y="565" class="small">export script</text>
+  <rect x="500" y="500" width="190" height="90" rx="12" class="node"/><text x="595" y="535" class="label">Apache Airflow</text><text x="595" y="565" class="small">daily warehouse DAG</text>
+  <path d="M210 285 H270" class="edge"/><text x="240" y="270" class="edge-label">JSON</text>
+  <path d="M420 285 H480" class="edge"/><text x="450" y="270" class="edge-label">records</text>
+  <path d="M670 270 C710 270 710 185 760 185" class="edge"/><text x="715" y="215" class="edge-label">raw events</text>
+  <path d="M670 300 C710 300 710 385 760 385" class="edge"/><text x="715" y="370" class="edge-label">1-minute rollups</text>
+  <path d="M950 185 H1030" class="edge"/><path d="M950 385 C990 385 990 300 1030 300" class="edge"/>
+  <path d="M690 545 H860 C900 545 900 430 855 430" class="edge"/><text x="820" y="530" class="edge-label">verify, summarize, prune</text>
+  <path d="M855 230 V340" class="edge"/>
+  <path d="M950 385 H1000 V545 H1010" class="edge"/><text x="1000" y="480" class="edge-label">export</text>
+</svg>
