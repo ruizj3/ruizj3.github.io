@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Fraud detection transformer service flow</title>
+  <desc id="desc">An upstream PostgreSQL fraud events table feeds an ingester and local training database. A trainer saves model artifacts, a scoring server loads them, and predictions are persisted and inspected through Adminer.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#4c6072"/></marker>
+    <style>
+      .node { fill: #f4f7f9; stroke: #2f4858; stroke-width: 3; }
+      .store { fill: #e8f2f0; stroke: #2f6f68; stroke-width: 3; }
+      .label { fill: #18313f; font: 600 21px Georgia, serif; text-anchor: middle; }
+      .small { fill: #49606d; font: 16px Georgia, serif; text-anchor: middle; }
+      .edge { stroke: #4c6072; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dashed { stroke-dasharray: 10 8; }
+      .edge-label { fill: #49606d; font: 15px Georgia, serif; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1280" height="760" fill="#fbfaf7"/>
+  <text x="640" y="48" class="label" font-size="28">Fraud Detection Transformer</text>
+  <rect x="35" y="250" width="190" height="95" rx="12" class="store"/><text x="130" y="285" class="label">Upstream</text><text x="130" y="312" class="small">Postgres: analytics_warehouse</text><text x="130" y="336" class="small">fraud_events</text>
+  <rect x="285" y="250" width="165" height="95" rx="12" class="node"/><text x="367" y="285" class="label">Ingester</text><text x="367" y="315" class="small">ingest.py</text><text x="367" y="337" class="small">watermark polling</text>
+  <rect x="505" y="170" width="185" height="95" rx="12" class="store"/><text x="597" y="205" class="label">Local Postgres</text><text x="597" y="235" class="small">fraud_training</text>
+  <rect x="505" y="360" width="185" height="95" rx="12" class="node"/><text x="597" y="395" class="label">Trainer</text><text x="597" y="425" class="small">main.py</text><text x="597" y="447" class="small">drift + retraining</text>
+  <rect x="780" y="105" width="210" height="110" rx="12" class="store"/><text x="885" y="140" class="label">Model artifacts</text><text x="885" y="169" class="small">best_model.pt</text><text x="885" y="192" class="small">inference_meta.pkl</text>
+  <rect x="780" y="300" width="185" height="95" rx="12" class="node"/><text x="872" y="335" class="label">Scoring server</text><text x="872" y="365" class="small">serve.py</text><text x="872" y="387" class="small">poll + infer</text>
+  <rect x="1020" y="170" width="185" height="95" rx="12" class="store"/><text x="1112" y="205" class="label">Predictions</text><text x="1112" y="235" class="small">probability + label</text>
+  <rect x="1020" y="390" width="185" height="95" rx="12" class="node"/><text x="1112" y="425" class="label">Adminer</text><text x="1112" y="455" class="small">database UI</text>
+  <rect x="285" y="535" width="190" height="90" rx="12" class="node"/><text x="380" y="570" class="label">Optional file</text><text x="380" y="600" class="small">CSV / Parquet snapshot</text>
+  <path d="M225 297 H285" class="edge"/><text x="255" y="280" class="edge-label">new rows</text>
+  <path d="M450 290 C475 290 475 218 505 218" class="edge"/><text x="478" y="255" class="edge-label">upsert</text>
+  <path d="M597 265 V360" class="edge"/><text x="625" y="320" class="edge-label">load data</text>
+  <path d="M690 400 C730 400 730 160 780 160" class="edge"/><text x="735" y="300" class="edge-label">save model</text>
+  <path d="M885 215 V300" class="edge"/><text x="920" y="265" class="edge-label">load checkpoint</text>
+  <path d="M690 218 C760 218 770 347 780 347" class="edge"/><text x="730" y="242" class="edge-label">unscored rows</text>
+  <path d="M965 347 C990 347 990 218 1020 218" class="edge"/><text x="990" y="300" class="edge-label">persist</text>
+  <path d="M1112 265 V390" class="edge"/><path d="M1020 438 H960 C900 438 900 500 690 500 V455" class="edge"/>
+  <path d="M475 580 H535 C600 580 600 455 597 455" class="edge dashed"/><text x="520" y="560" class="edge-label">file mode</text>
+</svg>
