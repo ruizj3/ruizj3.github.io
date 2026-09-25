@@ -1,4 +1,5 @@
 import React from 'react';
+import DeliveryMlShowcase from './DeliveryMlShowcase';
 
 
 function Portfolio() {
@@ -47,11 +48,11 @@ function Portfolio() {
             <p>A Dockerized fraud detection pipeline with drift-gated transformer training, live transaction scoring, and persisted predictions.</p>
             <a href="https://github.com/ruizj3/fraud_detection_transformer" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
-        <div class="project wip-project">
-            <div class="wip-badge">Work in Progress</div>
-            <img src="/wip-placeholder.svg" alt="Work in Progress - Fake Grocery Delivery Time Prediction"/>
+        <div class="project delivery-project">
+            <DeliveryMlShowcase />
             <h3>Fake Grocery Delivery Time Prediction</h3>
-            <p>Predicting delivery times for a simulated grocery delivery service.</p>
+            <p>A production-style ML pipeline that generates realistic orders, serves delivery estimates, and checks model health for drift.</p>
+            <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Data Generator</a>
             <a href="https://github.com/ruizj3/fake_grocery_delivery_time_prediction" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
         <div class="project wip-project">
