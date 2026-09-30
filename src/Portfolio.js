@@ -55,11 +55,13 @@ function Portfolio() {
             <a href="https://fake-grocery-delivery-ui.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Data Generator</a>
             <a href="https://github.com/ruizj3/fake_grocery_delivery_time_prediction" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
-        <div class="project wip-project">
-            <div class="wip-badge">Work in Progress</div>
-            <img src="/wip-placeholder.svg" alt="Work in Progress - Receipt OCR"/>
-            <h3>Receipt OCR</h3>
-            <p>Optical character recognition for receipts.</p>
+        <div class="project">
+            <a href="https://receipt-room.onrender.com/" target="_blank" rel="noopener noreferrer">
+                <img class="diagram-image" src="/receipt-room-preview.png" alt="Receipt Room landing page showing receipt upload and extracted line items."/>
+            </a>
+            <h3>Receipt Room</h3>
+            <p>A browser-based receipt OCR app that extracts editable line items locally.</p>
+            <a href="https://receipt-room.onrender.com/" class="my-link" target="_blank" rel="noopener noreferrer">View Live App</a>
             <a href="https://github.com/ruizj3/receipt-ocr" class="my-link" target="_blank" rel="noopener noreferrer">View Repo</a>
         </div>
 </section>
